@@ -1,13 +1,9 @@
-(ns core
+(ns aoc2024.day01
   (:require [clojure.string :as str]))
-
-(def input (slurp "./input.txt"))
 
 (defn get-num [s] (map Integer/parseInt (remove empty? (str/split s #" "))))
 
-(->> input
-     (str/split-lines)
-     (map get-num))
+(def input "")
 
 (def firsts
   (->> input
@@ -23,10 +19,13 @@
        (map last)
        sort))
 
-(abs -123)
+(comment
 
-(def ans1
-  (reduce + (map #(abs (- %1 %2)) firsts lasts)))
+  (def ans1
+    (reduce + (map #(abs (- %1 %2)) firsts lasts)))
 
-(def ans2
-  (reduce + (map #(* % (get (frequencies lasts) % 0)) firsts)))
+  (def ans2
+    (reduce + (map #(* % (get (frequencies lasts) % 0)) firsts)))
+
+  ())
+

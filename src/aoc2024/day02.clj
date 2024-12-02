@@ -1,4 +1,4 @@
-(ns core
+(ns aoc2024.day02
   (:require [clojure.string :as str]))
 
 (def sample
