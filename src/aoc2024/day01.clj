@@ -1,7 +1,7 @@
 (ns aoc2024.day01
   (:require [clojure.string :as str]))
 
-(defn get-num [s] (map Integer/parseInt (remove empty? (str/split s #" "))))
+(defn get-num [s] (map read-string (remove empty? (str/split s #" "))))
 
 (def input "")
 

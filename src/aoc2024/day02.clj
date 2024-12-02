@@ -10,7 +10,7 @@
 1 3 6 7 9")
 
 (defn parse-string [s]
-  (map Integer/parseInt (str/split s #" ")))
+  (map read-string (str/split s #" ")))
 
 (defn chk [f]
   (fn
@@ -56,8 +56,3 @@
        (filter true?)
        count))
 
-(part-1 (slurp "./input.txt"))
-
-(part-2 sample)
-
-(part-2 (slurp "./input.txt"))
