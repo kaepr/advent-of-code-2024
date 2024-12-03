@@ -55,4 +55,3 @@
                    (some true?))))
        (filter true?)
        count))
-
