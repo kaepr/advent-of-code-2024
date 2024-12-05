@@ -80,8 +80,8 @@ MXMXAXMASX")
 
 (comment
 
-  (part-1 (u/get-input))
+  (time (part-1 (u/get-input)))
 
-  (part-2 (u/get-input))
+  (time (part-2 (u/get-input)))
 
   ())
